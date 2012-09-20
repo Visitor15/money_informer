@@ -1,6 +1,5 @@
 package com.flabs.mobile.money_informer.gui;
 
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;

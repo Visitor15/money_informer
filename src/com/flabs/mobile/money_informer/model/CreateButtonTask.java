@@ -5,12 +5,10 @@ import java.util.Currency;
 import java.util.HashMap;
 import java.util.Locale;
 
-import org.apache.commons.lang3.ObjectUtils.Null;
-
 import android.content.Context;
 import android.os.AsyncTask;
 
-public class CreateButtonTask extends AsyncTask<Null, Null, Null> {
+public class CreateButtonTask extends AsyncTask<Void, Void, Void> {
 
 	Context c;
 	private HashMap<String, String> currencyTable;
@@ -23,7 +21,7 @@ public class CreateButtonTask extends AsyncTask<Null, Null, Null> {
 	}
 	
 	@Override
-	protected Null doInBackground(Null... arg0) {
+	protected Void doInBackground(Void... arg0) {
 		
 
 		Currency currency;

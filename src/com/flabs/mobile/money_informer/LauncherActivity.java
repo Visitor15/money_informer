@@ -1,10 +1,7 @@
 package com.flabs.mobile.money_informer;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Toast;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.flabs.mobile.money.spender.R;

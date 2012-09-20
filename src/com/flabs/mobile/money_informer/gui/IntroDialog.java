@@ -1,7 +1,6 @@
 package com.flabs.mobile.money_informer.gui;
 
 import android.content.ComponentName;
-import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.Gravity;

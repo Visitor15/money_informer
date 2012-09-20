@@ -2,12 +2,10 @@ package com.flabs.mobile.money_informer.model;
 
 import java.util.ArrayList;
 
-import org.apache.commons.lang3.ObjectUtils.Null;
-
 import android.os.AsyncTask;
 import android.view.View;
 
-public class TutorialFlasherTask extends AsyncTask<Null, Null, Null> {
+public class TutorialFlasherTask extends AsyncTask<Void, Void, Void> {
 
 	public static boolean isRunning = true;
 
@@ -18,7 +16,7 @@ public class TutorialFlasherTask extends AsyncTask<Null, Null, Null> {
 	}
 
 	@Override
-	protected Null doInBackground(Null... params) {
+	protected Void doInBackground(Void... params) {
 		while(isRunning) {
 			for(final View v : mList) {
 				v.post(new Runnable() {
