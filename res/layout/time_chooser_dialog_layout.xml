@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CurrencyTheme.Dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="4dip"
+        android:text="@string/dialog_title_text"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#33B5E5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.30"
+                android:background="#22FFFFFF"
+                android:gravity="center"
+                android:text="@string/days"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dip"
+                android:background="#FFFFFF" >
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.70"
+                android:weightSum="3" >
+
+                <include
+                    android:id="@+id/ll_one_day"
+                    android:layout_width="0dip"
+                    android:layout_height="48dip"
+                    android:layout_weight="1"
+                    layout="@layout/button_layout" />
+
+                <FrameLayout
+                    android:layout_width="1dip"
+                    android:layout_height="16dip"
+                    android:layout_gravity="bottom"
+                    android:background="#FFFFFF" />
+
+                <include
+                    android:id="@+id/ll_five_days"
+                    android:layout_width="0dip"
+                    android:layout_height="48dip"
+                    android:layout_weight="1"
+                    layout="@layout/button_layout" />
+
+                <FrameLayout
+                    android:layout_width="1dip"
+                    android:layout_height="16dip"
+                    android:layout_gravity="bottom"
+                    android:background="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--
+             <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="24dip"
+            android:background="#FFFFFF" >
+        </FrameLayout>
+        -->
+
+
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.30"
+                android:background="#22FFFFFF"
+                android:gravity="center"
+                android:text="@string/weeks"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF" >
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:weightSum="3" >
+
+                <include
+                    android:id="@+id/ll_one_week"
+                    android:layout_width="0dip"
+                    android:layout_height="48dip"
+                    android:layout_weight="1"
+                    layout="@layout/button_layout" />
+
+                <FrameLayout
+                    android:layout_width="1dip"
+                    android:layout_height="16dip"
+                    android:layout_gravity="bottom"
+                    android:background="#FFFFFF" />
+
+                <include
+                    android:id="@+id/ll_ten_weeks"
+                    android:layout_width="0dip"
+                    android:layout_height="48dip"
+                    android:layout_weight="1"
+                    layout="@layout/button_layout" />
+
+                <FrameLayout
+                    android:layout_width="1dip"
+                    android:layout_height="16dip"
+                    android:layout_gravity="bottom"
+                    android:background="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+        -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="24dip"
+            android:background="#FFFFFF" >
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.30"
+                android:background="#22FFFFFF"
+                android:gravity="center"
+                android:text="@string/months"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF" >
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.70"
+                android:weightSum="3" >
+
+                <include
+                    android:id="@+id/ll_one_month"
+                    android:layout_width="0dip"
+                    android:layout_height="48dip"
+                    android:layout_weight="1"
+                    layout="@layout/button_layout" />
+
+                <FrameLayout
+                    android:layout_width="1dip"
+                    android:layout_height="16dip"
+                    android:layout_gravity="bottom"
+                    android:background="#FFFFFF" />
+
+                <include
+                    android:id="@+id/ll_three_months"
+                    android:layout_width="0dip"
+                    android:layout_height="48dip"
+                    android:layout_weight="1"
+                    layout="@layout/button_layout" />
+
+                <FrameLayout
+                    android:layout_width="1dip"
+                    android:layout_height="16dip"
+                    android:layout_gravity="bottom"
+                    android:background="#FFFFFF" />
+
+                <include
+                    android:id="@+id/ll_six_months"
+                    android:layout_width="0dip"
+                    android:layout_height="48dip"
+                    android:layout_weight="1"
+                    layout="@layout/button_layout" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="24dip"
+            android:background="#FFFFFF" >
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.30"
+                android:background="#22FFFFFF"
+                android:gravity="center"
+                android:text="@string/years"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dip"
+                android:background="#FFFFFF" >
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.70"
+                android:weightSum="3" >
+
+                <include
+                    android:id="@+id/ll_one_year"
+                    android:layout_width="0dip"
+                    android:layout_height="48dip"
+                    android:layout_weight="1"
+                    layout="@layout/button_layout" />
+
+                <FrameLayout
+                    android:layout_width="1dip"
+                    android:layout_height="16dip"
+                    android:layout_gravity="bottom"
+                    android:background="#FFFFFF" />
+
+                <include
+                    android:id="@+id/ll_two_years"
+                    android:layout_width="0dip"
+                    android:layout_height="48dip"
+                    android:layout_weight="1"
+                    layout="@layout/button_layout" />
+
+                <FrameLayout
+                    android:layout_width="1dip"
+                    android:layout_height="16dip"
+                    android:layout_gravity="bottom"
+                    android:background="#FFFFFF" />
+
+                <include
+                    android:id="@+id/ll_five_years"
+                    android:layout_width="0dip"
+                    android:layout_height="48dip"
+                    android:layout_weight="1"
+                    layout="@layout/button_layout" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="24dip"
+            android:background="#FFFFFF" />
+
+        <CheckBox
+            android:id="@+id/cb_save_graph_time_pref"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="4dip"
+            android:text="@string/save_timespan_always" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#33B5E5" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/two_button_layout" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/ll_body_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <RelativeLayout
+        android:id="@+id/rl_contents_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.85" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <include
+                android:id="@+id/header_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/body_header_layout" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                layout="@layout/spinners_layout" />
+        </LinearLayout>
+
+        <!--
+             <include
+            android:id="@+id/ribbon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="105dip"
+            layout="@layout/ribbon_layout" />
+        -->
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/footer_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.15"
+        layout="@layout/body_footer_layout" />
+
+    <!--
+         <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="12dip"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bottom_dropshadow" />
+    -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.google.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="2dip"
+            ads:adSize="BANNER"
+            ads:adUnitId="a150516d5365be5"
+            ads:loadAdOnCreate="true" />
+
+        <!--
+             <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:text="@string/ads_here" />
+        -->
+
+    </RelativeLayout>
+
+</LinearLayout>

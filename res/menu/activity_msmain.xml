@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_settings"
+        android:orderInCategory="98"
+        android:showAsAction="never"
+        android:title="@string/menu_settings"/>
+    <item
+        android:id="@+id/menu_feedback"
+        android:orderInCategory="99"
+        android:showAsAction="never"
+        android:title="@string/feedback"/>
+    <item
+        android:id="@+id/menu_upgrade_to_pro"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/upgrade_to_pro"/>
+    <item
+        android:id="@+id/menu_favorites"
+        android:icon="@drawable/favorited_icon_36"
+        android:orderInCategory="0"
+        android:showAsAction="always"
+        android:title="@string/favorites"/>
+
+</menu>

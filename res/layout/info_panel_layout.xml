@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:visibility="gone" >
+
+    <RelativeLayout
+        android:id="@+id/progress_circle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/data_field"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="16dip"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/top_dropshadow" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_spanning_text_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dip"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_currency_range_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:alpha="0.60"
+                    android:text="@string/spanning"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/tv_currency_range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:alpha="0.60"
+                    android:textAllCaps="true" />
+
+                <ImageView
+                    android:id="@+id/iv_chart_timepicker"
+                    android:layout_width="32dip"
+                    android:layout_height="32dip"
+                    android:layout_marginLeft="4dip"
+                    android:alpha="0.60"
+                    android:background="@drawable/title_selector"
+                    android:clickable="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/set_spanning_time_icon" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/currency_chart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:paddingLeft="2dip"
+                android:paddingRight="2dip"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

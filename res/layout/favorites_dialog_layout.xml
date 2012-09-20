@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CurrencyTheme.Dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dip" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:id="@+id/ll_left_container"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.49"
+                android:background="@drawable/title_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_titleLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="12dip"
+                    android:text="@string/from"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dip"
+                android:layout_height="match_parent" />
+
+            <!--
+                     <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="16dip"
+                    android:layout_gravity="top"
+                    android:background="#33B5E5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="16dip"
+                    android:layout_gravity="bottom"
+                    android:background="#33B5E5" />
+            </LinearLayout>
+            -->
+
+            <LinearLayout
+                android:id="@+id/ll_right_container"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.49"
+                android:background="@drawable/title_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_titleRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="12dip"
+                    android:text="@string/to"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#33B5E5" />
+
+        <RelativeLayout
+            android:id="@+id/rl_container"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_margin="8dip"
+            android:layout_weight="1"
+            android:background="@drawable/list_frag_background"
+            android:padding="2dip" >
+
+            <TextView
+                android:id="@+id/tv_nothing_favorited"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="48dip"
+                android:text="@string/nothing_favorited"
+                android:textAllCaps="true"
+                android:textColor="#88FFFFFF"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#33B5E5" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        layout="@layout/one_button_layout" />
+
+</LinearLayout>

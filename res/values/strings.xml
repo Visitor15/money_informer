@@ -1,0 +1,105 @@
+<resources>
+
+    <string name="enable_ads_message">Thank you for using Money Informer! I\'ve had a lot of fun investing the time and energy in developing this app and welcome feedback from everyone.
+        
+        \n\nThis free version uses a small part of your screen to display advertisements from Admob. You can get rid of those ads by purchasing the pro version on Google\'s Play Store.</string>
+    <string name="enable_ads">Enable Ads?</string>
+    <string name="eula">End User License Agreement</string>
+    <string name="tap_here_for_graph">TAP HERE TO VIEW THE FINANCE CHART AND HIDE THE COUNTRY LISTS</string>
+    <string name="thank_you_for_downloading">Thank you for downloading!</string>
+    <string name="download">Download</string>
+    <string name="convert">Convert</string>
+    <string name="country">Country</string>
+    <string name="currency">Currency</string>
+    <string name="google_link">Google Link</string>
+    <string name="wikipedia_link">Wikipedia Link</string>
+    <string name="graph_time_frame">Graph Time Frame</string>
+    <string name="set_traveling_location">Set Traveling Location</string>
+    <string name="set_home_location">Set Home Location</string>
+    <string name="settings">Settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="app_name">Money Informer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_msmain">Money Informer</string>
+    <string name="from">FROM</string>
+    <string name="to">TO</string>
+    <string name="input_hint">Enter amount...</string>
+    <string name="at_current_conversion_rate">Conversion rate</string>
+    <string name="default_amount">00</string>
+    <string name="decimal_point">.</string>
+    <string name="default_exchange_rate">0.00</string>
+    <string name="dialog_title_text">Time frame</string>
+    <string name="days">Days</string>
+    <string name="weeks">Weeks</string>
+    <string name="months">Months</string>
+    <string name="years">Years</string>
+    <string name="one_day">1 day</string>
+    <string name="five_days">5 days</string>
+    <string name="one_week">1 week</string>
+    <string name="ten_weeks">10 weeks</string>
+    <string name="one_month">1 month</string>
+    <string name="three_months">3 months</string>
+    <string name="six_months">6 months</string>
+    <string name="one_year">1 year</string>
+    <string name="two_years">2 years</string>
+    <string name="five_years">5 years</string>
+    <string name="save_timespan_always">Always use this length of time?</string>
+    <string name="spanning">Spanning</string>
+    <string name="wikipedia">Wikipedia</string>
+    <string name="google">Google</string>
+    <string name="news">News</string>
+    <string name="favorite">Favorite</string>
+    <string name="favorites">Favorites</string>
+    <string name="nothing_favorited">Nothing favorited</string>
+    <string name="about">About</string>
+    <string name="feedback">Feedback</string>
+    <string name="upgrade_to_pro">Upgrade to pro</string>
+    <string name="loading">Loading...</string>
+    <string name="indexing">Indexing...</string>
+    <string name="load_warning_message">Press OK to start indexing countries. This only needs to happen once.</string>
+    <string name="eula_text">IMPORTANT, PLEASE READ CAREFULLY.  THIS IS A LICENSE AGREEMENT
+
+This SOFTWARE PRODUCT is protected by copyright laws and international copyright treaties as well as other intellectual property laws and treaties.  This SOFTWARE PRODUCT is licensed, not sold.
+
+End User License Agreement
+
+This End User License Agreement (“EULA”) is a legal agreement between you (either an individual or a single entity) and fORGE Labs Inc. (henceforth "fORGE Labs")  with regard to the copyrighted software (henceforth referred to as “SOFTWARE PRODUCT” or “Software”) provided with this EULA.  The SOFTWARE PRODUCT includes software, the associated media, and printed materials, and any “on line” or electronic documentation. Use of any software and related documentation (“SOFTWARE”) provided to you by fORGE Labs in whatever form or media, will constitute your acceptance of these terms, unless separate terms are provided by the software supplier, in which case certain additional or different terms may apply.  If you do not agree with the terms of this EULA, do not download, install, copy or use the Software.  By installing, copying or otherwise using the SOFTWARE PRODUCT, you agree to be bound by the terms of this EULA.  If you do not agree to the terms of this EULA, fORGE Labs is unwilling to license the SOFTWARE PRODUCT to you.
+
+
+1. Disclaimer of Warranty.  The Software is provided “AS IS” without warranty of any kind. fORGE Labs and its suppliers disclaim and make no express or implied warranties and specifically disclaim the warranties of merchantability, fitness for a particular purpose and non-infringement of third-party rights.  The entire risk as to the quality and performance of the Software is with you.   Neither fORGE Labs nor its suppliers warrant that the functions contained in the Software will meet your requirements or that the operation of the Software will be uninterrupted or error-free.  fORGE Labs is not obligated to provide any updates to the software.
+
+2. Limitation of Liability.  fORGE Labs\'s entire liability and your exclusive remedy under this EULA shall not exceed the price paid for the Software, if any.  In no event shall fORGE Labs or its suppliers be liable to you for any consequential, special, incidental or indirect damages of any kind arising out of the use or inability to use the software, even if fORGE Labs or its supplier has been advised of any claim by a third party.
+
+3. Privacy.  fORGE Labs does not collect any personal information such as IMIE, UDID, or other personally identifiable information.  fORGE Labs does use third-party analytics providers to collect generic information  pertaining to application usage and device usage.  This data is aggregated and stored to measure performance and use of applications.  Aggregated data may be shared publicly or with third parties.
+
+4. Rental.  You may not loan, rent, or lease the Software.
+
+5. Upgrades.  If the SOFTWARE is an upgrade from an earlier release or previously released version, you now may use that upgraded product only in accordance with this EULA.  If the SOFTWARE PRODUCT is an upgrade of a software program which you licensed as a single product, the SOFTWARE PRODUCT may be used only as part of that single product package and may not be separated for use on more than one Android device.
+
+6. No Liability for Consequential Damages.  In no event shall fORGE Labs, or its suppliers, be liable for any damages whatsoever (including, without limitation, incidental, direct, indirect, special and consequential damages, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use or inability to use this Software, even if fORGE Labs has been advised of the possibility of such damages.  Because some states/countries do not allow the exclusion or limitation  of liability for consequential or incidental damages, the above limitation may not apply to you.
+
+7. Eligible Licensees.  This Software is available for license solely to SOFTWARE owners, with no right of duplication or further distribution, licensing, or sub-licensing.  IF YOU DO NOT OWN THE SOFTWARE, THEN DO NOT DOWNLOAD, INSTALL, COPY OR USE THE SOFTWARE.
+
+8. License Grant.  fORGE Labs grants to you a personal, non-transferable and non-exclusive right to use the copy of the Software provided with this EULA.  You agree you will not copy the Software.  Modifying, translating, renting, copying, transferring or assigning all or part of the Software, or any rights granted hereunder, to any other persons and removing any proprietary notices, labels, or marks from the Software is strictly prohibited.  Furthermore, you hereby agree not to create derivative works based on the Software.  You many not transfer this Software.
+
+9. Copyright.  The Software is licensed, not sold.  You acknowledge that no title to the intellectual property in the Software is transferred to you.  You further acknowledge that title and full ownership rights to the Software will remain the exclusive property of fORGE Labs and  its suppliers, and you will not acquire any rights to the Software, except as expressly set forth above.  All copies of the Software will contain the same proprietary notices as contained in the Software.  All title and copyrights in and to the SOFTWARE PRODUCT (including but not limited to any images, photographs, animations, video, audio, music, and text incorporated into the SOFTWARE PRODUCT), and any copies of the SOFTWARE PRODUCT are owned by fORGE Labs or its suppliers.  The SOFTWARE PRODUCT is protected by copyright laws and international treaty provisions.
+
+10. Reverse Engineering.  You agree that you will not attempt to reverse compile, modify, translate or disassemble the Software in whole or in part.  Any failure to comply with the above or any other terms and conditions contained herein will result in the automatic termination of this license and the reversion of the rights granted hereunder to fORGE Labs.
+
+11. The free version of this software uses a network connection to display advertisements and analytics and help files.  Additional charges may be incurred depending on your network plan and overall network usage.  fORGE Labs is not responsible for any additional network charges that occur from use of this software.</string>
+
+    <!-- TEST STRINGS -->
+    <string name="test_range">Spanning 1 year</string>
+    <string name="USD">$USD</string>
+    <string name="JPY">*JPY</string>
+    <string name="ads_here">Ads go here</string>
+    <string name="small_number">66</string>
+    <string name="dollar_amount">$66</string>
+    <string name="yen_symbol">¥</string>
+    <string name="united_states">United States</string>
+    <string name="japan">Japan</string>
+    <string name="this_is_a_sentence">This is a rather long sentence that I constructed.</string>
+    <string name="sample_rate">1.2463</string>
+
+</resources>

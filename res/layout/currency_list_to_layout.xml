@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@+id/currency_list_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/iv_search"
+        android:layout_width="54dip"
+        android:layout_height="48dip"
+        android:layout_marginBottom="8dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dialog_background2"
+        android:src="@drawable/search_icon" />
+
+</RelativeLayout>

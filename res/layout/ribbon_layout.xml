@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <FrameLayout
+        android:id="@+id/fl_hide_lists_handle"
+        android:layout_width="120dip"
+        android:layout_height="0dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.15"
+        android:background="@drawable/handle_background" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/down_arrow" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.85"
+        android:weightSum="1" >
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="24dip"
+            android:layout_weight="0.5"
+            android:background="#66000000" >
+
+            <RelativeLayout
+                android:id="@+id/rl_left_col_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dip"
+                android:layout_marginRight="12dip"
+                android:layout_marginTop="12dip"
+                android:background="@drawable/column_title_background" >
+
+                <TextView
+                    android:id="@+id/tv_left_col_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/from" />
+
+                <ImageView
+                    android:id="@+id/iv_left_col_icon"
+                    android:layout_width="48dip"
+                    android:layout_height="48dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dip"
+                    android:padding="8dip"
+                    android:src="@drawable/ic_launcher" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="8dip"
+                android:layout_below="@id/rl_left_col_card"
+                android:layout_marginLeft="12dip"
+                android:layout_marginRight="12dip"
+                android:background="@drawable/top_dropshadow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="24dip"
+            android:layout_weight="0.5"
+            android:background="#66000000" >
+
+            <RelativeLayout
+                android:id="@+id/rl_right_col_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dip"
+                android:layout_marginRight="12dip"
+                android:layout_marginTop="12dip"
+                android:layout_weight="1"
+                android:background="@drawable/column_title_background" >
+
+                <TextView
+                    android:id="@+id/tv_right_col_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/to" />
+
+                <ImageView
+                    android:id="@+id/iv_right_col_icon"
+                    android:layout_width="48dip"
+                    android:layout_height="48dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dip"
+                    android:padding="8dip"
+                    android:src="@drawable/ic_launcher" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="8dip"
+                android:layout_below="@id/rl_right_col_card"
+                android:layout_marginLeft="12dip"
+                android:layout_marginRight="12dip"
+                android:background="@drawable/top_dropshadow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
