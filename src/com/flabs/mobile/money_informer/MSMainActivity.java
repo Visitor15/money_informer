@@ -554,6 +554,11 @@ public class MSMainActivity extends SherlockFragmentActivity implements
 			infoFrag.setLeftCurrencyText(userInput);
 			infoFrag.setRightCurrencyText(userInput, rate);
 			pb.setVisibility(View.INVISIBLE);
+			
+			currencyFrom.setButtonSelected(infoFrag.getLeftCountryName());
+			currencyFrom.showSelectedButtonInList();
+			currencyTo.setButtonSelected(infoFrag.getRightCountryName());
+			currencyTo.showSelectedButtonInList();
 		}
 
 		if (shouldBlink) {
@@ -566,6 +571,8 @@ public class MSMainActivity extends SherlockFragmentActivity implements
 			tutorial = new TutorialFlasherTask(vList);
 			tutorial.execute(null, null, null);
 		}
+		
+		
 	}
 
 	@Override

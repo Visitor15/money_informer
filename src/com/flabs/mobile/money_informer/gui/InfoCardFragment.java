@@ -215,6 +215,14 @@ public class InfoCardFragment extends BaseFragment {
 	public Drawable getDisplayingChart() {
 		return chartImage.getDrawable();
 	}
+	
+	public String getLeftCountryName() {
+		return leftCountryName;
+	}
+	
+	public String getRightCountryName() {
+		return rightCountryName;
+	}
 
 	public void setRightCurrencyText(Double val, Double rate) {
 

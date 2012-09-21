@@ -103,8 +103,14 @@ public class CurrencyListFragment extends ListFragment {
 		for(CountryButton btn : countryBtnList) {
 			if (btn.getLabel().equalsIgnoreCase(btnName)) {
 				btn.setIsSelected(true);
+				
+				mButton = btn;
 			}
 		}
+	}
+	
+	public void showSelectedButtonInList() {
+		listView.setSelection(((CurrencyListAdapter) listView.getAdapter()).getSelectedItemPosition(mButton));
 	}
 
 	public CountryButton getSelectedCountry() {
