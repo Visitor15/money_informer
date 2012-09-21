@@ -13,8 +13,11 @@ import org.apache.commons.io.IOUtils;
 
 import android.app.Activity;
 import android.os.AsyncTask;
+import android.util.Log;
 
 public class ExchangeRateDownloaderTask extends AsyncTask<String, Void, String> {
+	
+	public static final String TAG = "ExchangeRateDownloaderTask";
 	
 	Activity mActivity;
 	
@@ -43,7 +46,7 @@ public class ExchangeRateDownloaderTask extends AsyncTask<String, Void, String> 
 
 	@Override
 	protected String doInBackground(String... args) {
-
+		Log.d(TAG, "NCC - URL is: " + args[0]);
 		String line = "";
 		try {
 			BufferedInputStream inputStream = new BufferedInputStream(new URL(args[0]).openStream());
@@ -80,6 +83,8 @@ public class ExchangeRateDownloaderTask extends AsyncTask<String, Void, String> 
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
+		Log.d(TAG, "NCC - URL : Returning rate " + mRate);
 
 		return mRate;
 	}

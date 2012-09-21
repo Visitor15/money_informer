@@ -18,6 +18,8 @@ import android.widget.TextView;
 import com.flabs.mobile.money.spender.R;
 import com.flabs.mobile.money_informer.MSMainActivity;
 import com.flabs.mobile.money_informer.model.ChartDownloaderTask;
+import com.flabs.mobile.money_informer.model.ExchangeRateDownloaderTask;
+import com.flabs.mobile.money_informer.utils.Util;
 
 public class InfoCardFragment extends BaseFragment {
 
@@ -44,6 +46,7 @@ public class InfoCardFragment extends BaseFragment {
 	private LinearLayout spanningTextContainer;
 	private LinearLayout leftColBtn;
 	private LinearLayout rightColBtn;
+	private ImageView swapBtn;
 
 	private InfoCardFragment mFrag;
 	private String countryCode;
@@ -84,12 +87,14 @@ public class InfoCardFragment extends BaseFragment {
 		spanningTextContainer = (LinearLayout) llBody.findViewById(R.id.ll_spanning_text_container);
 		leftColBtn = (LinearLayout) llBody.findViewById(R.id.ll_left_col_title);
 		rightColBtn = (LinearLayout) llBody.findViewById(R.id.ll_right_col_title);
+		swapBtn = (ImageView) llBody.findViewById(R.id.iv_swap_icon);
 
 		timeLength.setText(SPACE.concat(getString(R.string.one_year)));
 
 		setTimePickerListener(timePicker);
 		setLeftBtnListener(leftColBtn);
 		setRightBtnListener(rightColBtn);
+		setSwapBtnListener(swapBtn);
 //		setLeftInfoBtn(leftInfoBtn);
 //		setRightInfoBtn(rightInfoBtn);
 
@@ -128,18 +133,22 @@ public class InfoCardFragment extends BaseFragment {
 
 	public void setTitleLeftText(String text) {
 		Log.d(TAG, "NCC - LEFT TITLE TEXT IS: " + text);
+		leftCountryCode = text;
 		titleLeft.setText(text);
 	}
 
 	public void setTitleRightText(String text) {
+		rightCountryCode = text;
 		titleRight.setText(text);
 	}
 
 	public void setSubTitleLeftText(String text) {
+		leftCountryName = text;
 		subTitleLeft.setText(text);
 	}
 
 	public void setSubTitleRightText(String text) {
+		rightCountryName = text;
 		subTitleRight.setText(text);
 	}
 
@@ -219,6 +228,37 @@ public class InfoCardFragment extends BaseFragment {
 
 		rightDollar.setText(mDouble.toString().subSequence(0, mDouble.toString().indexOf(".")));
 		rightChange.setText(mDouble.toString().substring(mDouble.toString().indexOf(".") + 1, mDouble.toString().length()));
+	}
+	
+	public void swapButtons() {
+		String tempSubTitle = subTitleLeft.getText().toString();
+		String tempTitle = titleLeft.getText().toString();
+		
+		setTitleLeftText(titleRight.getText().toString());
+		setSubTitleLeftText(subTitleRight.getText().toString());
+		
+		setTitleRightText(tempTitle);
+		setSubTitleRightText(tempSubTitle);
+		
+		String fromISOCode = ((MSMainActivity) getActivity()).getButtonByCountryName(leftCountryName).getISOCode();
+		String toISOCode = ((MSMainActivity) getActivity()).getButtonByCountryName(rightCountryName).getISOCode();
+		
+		ExchangeRateDownloaderTask exchangeTask = new ExchangeRateDownloaderTask(getActivity(), leftCountryCode, rightCountryCode);
+		exchangeTask.execute(Util.baseURL
+				.concat(fromISOCode)
+				.concat(toISOCode)
+				.concat("=X"));
+	}
+	
+	private void setSwapBtnListener(ImageView btn) {
+		btn.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				swapButtons();
+			}
+			
+		});
 	}
 	
 	private void setLeftBtnListener(LinearLayout v) {
