@@ -251,7 +251,7 @@ public class InfoCardFragment extends BaseFragment {
 		String fromISOCode = ((MSMainActivity) getActivity()).getButtonByCountryName(leftCountryName).getISOCode();
 		String toISOCode = ((MSMainActivity) getActivity()).getButtonByCountryName(rightCountryName).getISOCode();
 		
-		ExchangeRateDownloaderTask exchangeTask = new ExchangeRateDownloaderTask(getActivity(), leftCountryCode, rightCountryCode);
+		ExchangeRateDownloaderTask exchangeTask = new ExchangeRateDownloaderTask(getActivity(), leftCountryCode, rightCountryCode, true);
 		exchangeTask.execute(Util.baseURL
 				.concat(fromISOCode)
 				.concat(toISOCode)

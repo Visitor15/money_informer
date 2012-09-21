@@ -26,6 +26,8 @@ public class ExchangeRateDownloaderTask extends AsyncTask<String, Void, String> 
 	String countryISOTo = "";
 
 	Double rate = 0.0;
+	
+	boolean showSelectedBtn;
 
 	public ExchangeRateDownloaderTask(String countryISOFrom,
 			String countryISOTo) {
@@ -33,15 +35,16 @@ public class ExchangeRateDownloaderTask extends AsyncTask<String, Void, String> 
 		this.countryISOTo = countryISOTo;
 	}
 	
-	public ExchangeRateDownloaderTask(Activity activity, String countryISOFrom, String CountryISOTo) {
+	public ExchangeRateDownloaderTask(Activity activity, String countryISOFrom, String CountryISOTo, boolean showSelectedButtonInList) {
 		mActivity = activity;
 		this.countryISOFrom = countryISOFrom;
 		this.countryISOTo = countryISOTo;
+		showSelectedBtn = showSelectedButtonInList;
 	}
 	
 	@Override
 	protected void onPreExecute() {
-		((IExchangeRateTask) mActivity).updateUI(rate, true, false);
+		((IExchangeRateTask) mActivity).updateUI(rate, true, false, showSelectedBtn);
 	}
 
 	@Override
@@ -92,7 +95,7 @@ public class ExchangeRateDownloaderTask extends AsyncTask<String, Void, String> 
 	@Override
 	protected void onPostExecute(String result) {
 		rate = Double.parseDouble(result);
-		((IExchangeRateTask) mActivity).updateUI(rate, false, false);
+		((IExchangeRateTask) mActivity).updateUI(rate, false, false, showSelectedBtn);
 		
 		
 	}

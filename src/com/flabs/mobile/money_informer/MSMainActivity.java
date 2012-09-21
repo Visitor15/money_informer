@@ -278,7 +278,7 @@ public class MSMainActivity extends SherlockFragmentActivity implements
 				ExchangeRateDownloaderTask task = new ExchangeRateDownloaderTask(
 						mActivity, currencyFrom.getSelectedCountry()
 								.getISOCode(), currencyTo.getSelectedCountry()
-								.getISOCode());
+								.getISOCode(), false);
 				task.execute(Util.baseURL
 						.concat(currencyFrom.getSelectedCountry().getISOCode())
 						.concat(currencyTo.getSelectedCountry().getISOCode())
@@ -309,7 +309,7 @@ public class MSMainActivity extends SherlockFragmentActivity implements
 
 		ExchangeRateDownloaderTask task = new ExchangeRateDownloaderTask(
 				mActivity, currencyFrom.getSelectedCountry().getISOCode(),
-				currencyTo.getSelectedCountry().getISOCode());
+				currencyTo.getSelectedCountry().getISOCode(), false);
 		task.execute(Util.baseURL
 				.concat(currencyFrom.getSelectedCountry().getISOCode())
 				.concat(currencyTo.getSelectedCountry().getISOCode())
@@ -367,7 +367,7 @@ public class MSMainActivity extends SherlockFragmentActivity implements
 					ExchangeRateDownloaderTask task = new ExchangeRateDownloaderTask(
 							mActivity, currencyFrom.getSelectedCountry()
 									.getISOCode(), currencyTo
-									.getSelectedCountry().getISOCode());
+									.getSelectedCountry().getISOCode(), false);
 					task.execute(Util.baseURL
 							.concat(currencyFrom.getSelectedCountry()
 									.getISOCode())
@@ -521,7 +521,7 @@ public class MSMainActivity extends SherlockFragmentActivity implements
 		try {
 			ExchangeRateDownloaderTask task = new ExchangeRateDownloaderTask(
 					mActivity, currencyFrom.getSelectedCountry().getISOCode(),
-					currencyTo.getSelectedCountry().getISOCode());
+					currencyTo.getSelectedCountry().getISOCode(), false);
 			task.execute(Util.baseURL
 					.concat(currencyFrom.getSelectedCountry().getISOCode())
 					.concat(currencyTo.getSelectedCountry().getISOCode())
@@ -538,7 +538,7 @@ public class MSMainActivity extends SherlockFragmentActivity implements
 	}
 
 	@Override
-	public void updateUI(Double rate, boolean isPreExecute, boolean shouldBlink) {
+	public void updateUI(Double rate, boolean isPreExecute, boolean shouldBlink, boolean shouldShowSelectedBtn) {
 		if (!isShowing) {
 			// setContentView(R.layout.activity_msmain);
 			isShowing = true;
@@ -556,9 +556,12 @@ public class MSMainActivity extends SherlockFragmentActivity implements
 			pb.setVisibility(View.INVISIBLE);
 			
 			currencyFrom.setButtonSelected(infoFrag.getLeftCountryName());
-			currencyFrom.showSelectedButtonInList();
 			currencyTo.setButtonSelected(infoFrag.getRightCountryName());
-			currencyTo.showSelectedButtonInList();
+			
+			if(shouldShowSelectedBtn) {
+				currencyTo.showSelectedButtonInList();
+				currencyFrom.showSelectedButtonInList();
+			}
 		}
 
 		if (shouldBlink) {
